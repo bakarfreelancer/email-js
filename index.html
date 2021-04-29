@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("user_LJdmitTgg5JWprS83kMnu");
+    })();
+    </script>
+    <title>Contact</title>
+
+</head>
+
+<body>
+    <section class="contactSection">
+        <div class="image">
+            <img src="assets/images/mailbox.svg" alt="">
+        </div>
+        <div class="formWraper">
+            <h1>Contact us</h1>
+            <form id="form">
+                <div class="field">
+                    <input type="text" name="from_name" placeholder="Name" id="from_name">
+                </div>
+                <div class="field">
+                    <input type="email" name="reply_to" placeholder="Email" id="reply_to">
+                </div>
+
+                <div class="field hide">
+                    <label for="to_name">to_name</label>
+                    <input type="text" name="to_name" id="to_name" vlaue="Dotcode">
+                </div>
+
+                <div class="field">
+                    <textarea id="message" name="message" cols="30" placeholder="Your Message..." rows="10"></textarea>
+                </div>
+
+                <input type="submit" id="button" value="Send Email">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Designed by <a href="dotcode.site">DotCode.site</a> |
+            <a href="https://github.com/bakarfreelancer/email-js">Source Code</a>
+        </p>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
